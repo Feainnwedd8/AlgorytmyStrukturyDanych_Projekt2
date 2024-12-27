@@ -27,14 +27,14 @@ class Program
 
     static void Main(string[] args)
     {
-        for (int n = 100_000; n == 1_000_000; n += 100_000)
+        for (int n = 100_000; n <= 1_000_000; n += 100_000)
         {
 
             Random rn = new Random();
             int[] arr = new int[n];
 
             for (int i = 0; i < n; i++) arr[i] = rn.Next(1, n);
-
+            Console.WriteLine("\nDla kroku o wartości: " + n);
             RandomValuesArr(arr);
             AscValuesArr(arr);
             DescValuesArr(arr);
@@ -106,7 +106,7 @@ class Program
         Console.WriteLine("Tablica z losowym ustawieniem wartości");
         Console.WriteLine("Średni czas wykonania dla: ");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             SelectionSort(arr);
@@ -117,7 +117,7 @@ class Program
         double avg = Tsuma.Sum() / gIterations;
         Console.WriteLine("Selection Sort: " + avg + " [s]");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             InsertionSort(arr);
@@ -128,7 +128,7 @@ class Program
         avg = Tsuma.Sum() / gIterations;
         Console.WriteLine("Insertion Sort: " + avg + " [s]");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             BubbleSort(arr);
@@ -150,7 +150,7 @@ class Program
         Console.WriteLine("Tablica z rosnącym ustawieniem wartości");
         Console.WriteLine("Średni czas wykonania dla: ");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             SelectionSort(arr);
@@ -161,7 +161,7 @@ class Program
         double avg = Tsuma.Sum() / gIterations;
         Console.WriteLine("Selection Sort: " + avg + " [s]");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             InsertionSort(arr);
@@ -172,7 +172,7 @@ class Program
         avg = Tsuma.Sum() / gIterations;
         Console.WriteLine("Insertion Sort: " + avg + " [s]");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             BubbleSort(arr);
@@ -194,7 +194,7 @@ class Program
         Console.WriteLine("Tablica z malejącym ustawieniem wartości");
         Console.WriteLine("Średni czas wykonania dla: ");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             SelectionSort(arr);
@@ -205,7 +205,7 @@ class Program
         double avg = Tsuma.Sum() / gIterations;
         Console.WriteLine("Selection Sort: " + avg + " [s]");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             InsertionSort(arr);
@@ -216,7 +216,7 @@ class Program
         avg = Tsuma.Sum() / gIterations;
         Console.WriteLine("Insertion Sort: " + avg + " [s]");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             BubbleSort(arr);
@@ -239,7 +239,7 @@ class Program
         Console.WriteLine("Tablica z  V-kształtnym ustawieniem wartości");
         Console.WriteLine("Średni czas wykonania dla: ");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             SelectionSort(arr);
@@ -250,7 +250,7 @@ class Program
         double avg = Tsuma.Sum() / gIterations;
         Console.WriteLine("Selection Sort: " + avg + " [s]");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             InsertionSort(arr);
@@ -261,7 +261,7 @@ class Program
         avg = Tsuma.Sum() / gIterations;
         Console.WriteLine("Insertion Sort: " + avg + " [s]");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             BubbleSort(arr);
@@ -282,7 +282,7 @@ class Program
         Console.WriteLine("Tablica ze stałymi wartościami");
         Console.WriteLine("Średni czas wykonania dla: ");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             SelectionSort(arr);
@@ -293,7 +293,7 @@ class Program
         double avg = Tsuma.Sum() / gIterations;
         Console.WriteLine("Selection Sort: " + avg + " [s]");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             InsertionSort(arr);
@@ -304,7 +304,7 @@ class Program
         avg = Tsuma.Sum() / gIterations;
         Console.WriteLine("Insertion Sort: " + avg + " [s]");
 
-        for (int i = 0; i > gIterations; i++)
+        for (int i = 0; i < gIterations; i++)
         {
             long StartingTime = Stopwatch.GetTimestamp();
             BubbleSort(arr);
