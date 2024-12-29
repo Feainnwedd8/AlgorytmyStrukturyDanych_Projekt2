@@ -1,17 +1,9 @@
 ﻿/*
  POMYSŁY
 
-rozbić to np na robienie liczenie czasu i wykonan od razu w funkcji sortowania, jednak zrobić 
-osobne tablice dla kazdego typu (rosnoca, malejace, V itd)
-wywolywać funkcje, ktora od razu zrobi te 10 pomiarów, policzy srednie i wypisze ilosc wykonan
 
-NIECH TO BEDA FUNKCJE KORZYSTAJACE Z OSOBNO ZROBIONYCH FUNKCJI SORTUJACYCH
-TZN FUNKCJA KTORA PO 10 RAZY WYWOLUJE SORT_XXXX, LICZY ITD
 
-MOZE TO Z JEDNEJ TABLICY WARTOSCI ZROBIC TE KILKA RODZAJOW? ------
-  
-  
-  */
+ */
 
 
 using System;
@@ -27,7 +19,7 @@ class Program
 
     static void Main(string[] args)
     {
-        for (int n = 100_000; n <= 1_000_000; n += 100_000)
+        for (int n = 100_000; n <= 1_000_000; n += 100_000) //co krok nowa tablica i funkcje wykonują• się dla tych wartości
         {
 
             Random rn = new Random();
@@ -45,7 +37,7 @@ class Program
 
     }
 
-    static void SelectionSort(int[] arr)
+    static void SelectionSort(int[] arr) //dobrać sobie z neta
     {
         int n = arr.Length;
 
@@ -59,7 +51,7 @@ class Program
         }
     }
 
-    static void InsertionSort(int[] arr)
+    static void InsertionSort(int[] arr) //dobrać sobie z neta
     {
         for (int i = 1; i < arr.Length; ++i)
         {
@@ -76,7 +68,7 @@ class Program
         }
     }
 
-    public static void BubbleSort(int[] arr)
+    public static void BubbleSort(int[] arr) //dobrać sobie z neta
     {
         int temp;
         bool swapped;
