@@ -19,7 +19,7 @@ class Program
 
     static void Main(string[] args)
     {
-        for (int n = 100_000; n <= 1_000_000; n += 100_000) //co krok nowa tablica i funkcje wykonują• się dla tych wartości
+        for (int n = 100_000; n <= 1_000_000; n += 100_000)
         {
 
             Random rn = new Random();
@@ -37,7 +37,7 @@ class Program
 
     }
 
-    static void SelectionSort(int[] arr) //dobrać sobie z neta
+    static void SelectionSort(int[] arr) 
     {
         int n = arr.Length;
 
