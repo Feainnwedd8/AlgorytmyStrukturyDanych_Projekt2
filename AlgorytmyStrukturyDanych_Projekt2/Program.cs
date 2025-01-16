@@ -29,7 +29,7 @@ class Program
 
     }
 
-    static void SelectionSort(int[] arr) //dobrać sobie z neta
+    static void SelectionSort(int[] arr)
     {
         int n = arr.Length;
 
@@ -43,7 +43,7 @@ class Program
         }
     }
 
-    static void InsertionSort(int[] arr) //dobrać sobie z neta
+    static void InsertionSort(int[] arr)
     {
         for (int i = 1; i < arr.Length; ++i)
         {
@@ -60,7 +60,7 @@ class Program
         }
     }
 
-    public static void BubbleSort(int[] arr) //dobrać sobie z neta
+    public static void BubbleSort(int[] arr)
     {
         int temp;
         bool swapped;
