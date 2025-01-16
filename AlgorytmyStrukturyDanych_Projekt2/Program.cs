@@ -1,12 +1,4 @@
-﻿/*
- POMYSŁY
-
-
-
- */
-
-
-using System;
+﻿using System;
 using System.Collections.Immutable;
 using System.Diagnostics;
 using System.Linq;
@@ -19,13 +11,13 @@ class Program
 
     static void Main(string[] args)
     {
-        for (int n = 100_000; n <= 1_000_000; n += 100_000) //co krok nowa tablica i funkcje wykonują• się dla tych wartości
+        for (int n = 100_000; n <= 1_000_000; n += 100_000)
         {
 
             Random rn = new Random();
             int[] arr = new int[n];
 
-            for (int i = 0; i < n; i++) arr[i] = rn.Next(1, n);
+            for (int i = 0; i < n; i++) arr[i] = rn.Next(1, 1000);
             Console.WriteLine("\nDla kroku o wartości: " + n);
             RandomValuesArr(arr);
             AscValuesArr(arr);
